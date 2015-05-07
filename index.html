@@ -6,15 +6,15 @@
     <!-- Device Compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Keywords for SEO, feel free to ignore this, it's an Intranet -->
-    <meta name="keywords" content="Kenneth">
+    <meta name="keywords" content="Ken, Kenneth, Bigler, Kenneth Bigler, Ken Bigler, Resume, HTML, CSS, JavaScript, C++, C, Software Developer, Web, Web Developer, Web Technologist, Santa Clara, SCU, scu, Santa Clara University">
     <!-- A short description of my website -->
-    <meta name="description" content="The Homepage for Kenneth and Launch site to everything Kenneth.">
+    <meta name="description" content="This is a site about Kenneth Bigler, Student at Santa Clara University, including his work, interests, and resume">
     <!-- I made this template, feel free to direct any questions about the template to kennethbigler@gmail.com-->
     <meta name="author" content="Kenneth Bigler">
     <!-- Adding a stylesheet to fix issues on this particular bootstrap window -->
     <link rel='stylesheet' media='screen and (min-width: 992px) and (max-width: 1199px)' href='css/tabletstyles.css' />
     <!-- Site Title -->
-     <title>My BootStrap Site</title>
+     <title>Kenneth Bigler Resume Software Engineering</title>
     <!-- Please note, CDNs are not supported in IE 8, we will have to download source code and host it -->
     <!-- Bootstrap Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
         	<!-- Inactive Text About Me -->
-        	<a class="navbar-brand" href="#">Kenneth Bigler</a>
+        	<a class="navbar-brand" href="index.html">Kenneth Bigler</a>
             <!-- Bootstrap Colapsed Menu Look -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -46,11 +46,13 @@
             <!-- Menu Items -->
             <div id="navbar" class="collapse navbar-collapse col-sm-3">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- XXXXX Tab -->
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <!-- Projects Tab -->
                     <li class="dropdown">
-                    	<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Google <span class="caret"></span></a>
+                    	<a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
 							<li><a href="http://www.google.com/">Google</a></li>
 							<li><a href="http://www.google.com/">Google</a></li>
@@ -62,7 +64,7 @@
         <!-- /container -->
         </div>
     </nav>
-	
+<!---------------------------------------------------------------------------------------------------------------->
     <!-- Header Area -->
     <div class="jumbotron">
         <h1>Kenneth Bigler</h1>
@@ -71,10 +73,55 @@
 <!---------------------------------------------------------------------------------------------------------------->
     <!-- Main Body of the Website -->
     <div class="row">
-    
+        
 <!---------------------------------------------------------------------------------------------------------------->
-    	<!-- Lefthand Column -->
-        <div class="col-md-3 col-sm-4">
+        <!-- Main Content, LeftHand Side -->
+        <div class="col-md-10 col-sm-9">
+            <!-- Begin About Section -->
+        	<div class="mainContent">
+            	<h3 class="mainHeader">About Me</h3>
+               	<figure class="banner">
+                	<img id="main_photo" src="images/ken.jpg" alt="This is a photo of Kenneth Bigler"/>
+                </figure>
+                <h2 align="center">Hello! Welcome to my Resum&eacute; Website</h2>
+                <h3 align="center">Web Technologist at NetApp</h3>
+                <h3 align="center">Computer Science and Engineering Senior at Santa Clara University</h3>
+                <p>
+                    <b>Location:</b> Los Altos, California<br />
+                    <b>Interests:</b> Computer Software<br />
+                    <b>Current Employment:</b> NetApp<br />
+                    <b>Volunteer Work:</b> Second Harvest Food Bank
+                </p>
+            <!-- / End About Section -->
+            </div>
+            <!-- Begin Education Section -->
+        	<div class="mainContent">
+            	<h3 class="mainHeader">Education</h3>
+                <p><b>Santa Clara University,</b> Santa Clara, CA<br />
+                Bachelor of Science in Computer Science and Engineering with a Mathematics Minor, June 2015<br />
+                Master of Science in Computer Engineering with an Emphasis in Software Engineering, June 2016<br />
+                Dean’s List, September 2012 – Present<br />
+                GPA: 3.717<br /></p>
+                <p><b>Stanford University,</b> Stanford, CA<br />
+                High School Summer College, June-Aug. 2010<br />
+                GPA: 3.812</p>
+            </div>
+			<div class="mainContent">
+            	<h3 class="mainHeader">Summary of Skills</h3>
+                <ul>
+                    <li>Designing, building, and overseeing production of large and small Internet and Intranet sites</li>
+                    <li>Developing a schedule for web projects, creating web standards, prioritizing goals, documenting procedures</li>
+                    <li>Gathering information to make useful websites and creating web art from scratch</li>
+                    <li>Manage international team members, strong communication skills, team player, and detail-oriented</li>
+                </ul>
+                <p><b>Computer:</b> Android, Java, C, C++, HTML5, CSS3, JavaScript, jQuery, PHP, AJAX, UNIX, Linux, json, XML, Joomla, WordPress, Adobe CS (Dreamweaver, Photoshop, Illustrator, Fireworks, InDesign), ServiceNow, Microsoft Office</p>
+            </div>
+        <!-- /LeftHand Side -->
+    	</div>
+
+<!---------------------------------------------------------------------------------------------------------------->
+    	<!-- RightHand Column -->
+        <div class="col-md-2 col-sm-3">
             <!-- Quicklinks -->
             <div class="leftContent">
             	<h3 class="leftHeader">Quicklinks</h3>
@@ -93,25 +140,10 @@
             <!-- /Stock Quote -->
             </div>
             
-        <!-- /Lefthand Side -->
+        <!-- /RightHand Side -->
         </div>
-        
+
 <!---------------------------------------------------------------------------------------------------------------->
-        <!-- Main Content, Righthand Side -->
-        <div class="col-md-9 col-sm-8">
-            <!-- Begin About Section -->
-        	<div class="mainContent">
-            	<h3 class="mainHeader">About Me</h3>
-               	<p>Lorem Ipsum</p>
-            <!-- / End News Module -->
-            </div>
-            <!-- Begin News Section -->
-        	<div class="mainContent">
-            	<h3 class="mainHeader"><a href="http://www.google.com/">Career</a></h3>
-                <p>Lorem Ipsum</p>
-            </div>
-        <!-- /Righthand Side -->
-    	</div>
 	<!-- /row -->
     </div>
 <!-- /container -->
@@ -121,7 +153,7 @@
 <footer class="footer">
     <div class="container-fluid">
         <p style="display:inline;" id="myDate"></p>
-        <p style="float:right;"><a href="#feedback">Feedback</a></p>
+        <p style="float:right;"><a href="mailto:kennethbigler@gmail.com?subject=Feedback">Feedback</a></p>
     </div>
 </footer>
 
@@ -134,5 +166,6 @@
 <!-- My own custom Javascript Functions -->
 <script src="js/myscripts.js"></script>
 
+<!---------------------------------------------------------------------------------------------------------------->
 </body>
 </html>
