@@ -12,12 +12,25 @@ function getData() {
 
 	$.getJSON(url, 'q=' + data + "&format=json&diagnostics=true&env=http://datatables.org/alltables.env")
 		.done(function (data) {
-		$("#result").html("Tesla Stock Quote: " + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
+		$("#tresult").html("Tesla Stock Quote: " + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
 		//console.log(data);
 	})
 		.fail(function (jqxhr, textStatus, error) {
 		var err = textStatus + ", " + error;
-			$("#result").text('Request failed: ' + err);
+			$("#tresult").text('Request failed: ' + err);
+	});
+	
+	var symbol = "ntap";
+	var data = encodeURIComponent("select * from yahoo.finance.quotes where symbol in ('" + symbol + "')");
+
+	$.getJSON(url, 'q=' + data + "&format=json&diagnostics=true&env=http://datatables.org/alltables.env")
+		.done(function (data) {
+		$("#nresult").html("NetApp Stock Quote: " + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
+		//console.log(data);
+	})
+		.fail(function (jqxhr, textStatus, error) {
+		var err = textStatus + ", " + error;
+			$("#nresult").text('Request failed: ' + err);
 	});
 }
 
