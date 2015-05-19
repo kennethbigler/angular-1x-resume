@@ -29,6 +29,10 @@ p, div {
 	margin-top: 30px;
 }
 
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
 .leftContent ul {
 	padding-left: 15px;
 	margin-bottom: 0px;
@@ -39,7 +43,7 @@ footer {
 	left: 0;
 	right: 0;
 	height: 50px;
-	background-color: #F20544;
+	background-color: #222426;
 	padding: 0;
 }
 
@@ -170,10 +174,19 @@ nav > div.container > .pull-right {
 	display: block;
 	margin: auto;
 }
+
+#miranda {
+	width: 100%;
+	max-width: 764px;
+	display: block;
+	margin: auto;
+}
+
 img.corp_logo {
 	float: right;
 	max-width: 150px;
 	padding-top: .625em;
+	margin-left: .625em;
 }
 figcaption {
 	text-align: center;
