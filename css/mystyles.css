@@ -150,24 +150,31 @@ nav > div.container > .pull-right {
 #groupright {
 	max-width: 572px;
 }
+
 #scheduler {
 	max-width: 494px;
 }
+
 #hqa {
 	max-width: 300px;
 }
+
 #michelle {
 	max-width: 526px;
 }
+
 #kidzkamp {
 	max-width: 535px;
 }
+
 #aboutme {
 	max-width: 308px;
 }
+
 #mapquiz {
 	max-width: 458px;
 }
+
 #main_photo {
 	width: 100%;
 	max-width: 541px;
@@ -188,6 +195,19 @@ img.corp_logo {
 	padding-top: .625em;
 	margin-left: .625em;
 }
+
+img.site {
+	width:100%;
+	display:block;
+	margin:auto;
+	cursor:pointer;
+	cursor:hand;
+	margin-bottom:10px;
+	-moz-box-shadow: .0625em .3125em .625em #888;
+	-webkit-box-shadow: .0625em .3125em .625em #888;
+	box-shadow: .0625em .3125em .625em #888;
+}
+
 figcaption {
 	text-align: center;
 	color: #999;
