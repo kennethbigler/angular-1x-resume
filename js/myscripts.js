@@ -20,7 +20,7 @@ function getData() {
 
 	$.getJSON(url, 'q=' + data + "&format=json&diagnostics=true&env=http://datatables.org/alltables.env")
 		.done(function (data) {
-		$("#tresult").html("Tesla Stock Quote: " + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
+		$("#tresult").html("Tesla Stock Quote: $" + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
 		//console.log(data);
 	})
 		.fail(function (jqxhr, textStatus, error) {
@@ -33,7 +33,7 @@ function getData() {
 
 	$.getJSON(url, 'q=' + data + "&format=json&diagnostics=true&env=http://datatables.org/alltables.env")
 		.done(function (data) {
-		$("#nresult").html("NetApp Stock Quote: " + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
+		$("#nresult").html("NetApp Stock Quote: $" + data.query.results.quote.LastTradePriceOnly + "&nbsp;&nbsp;(" + data.query.results.quote.Change + ")");
 		//console.log(data);
 	})
 		.fail(function (jqxhr, textStatus, error) {
