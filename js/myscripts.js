@@ -8,6 +8,32 @@
 ga('create', 'UA-54229318-1', 'auto');
 ga('send', 'pageview');
 
+/* This code is to make the side bar not scroll after the initial hiding of the jumbotron
+ * Idea from http://jsfiddle.net/HQS8s/
+ */
+$(document).ready(function() {
+    // Cache selectors for faster performance.
+    var $window = $(window),
+        $rightBar = $('#rightBar'),
+        $rightBarAnchor = $('#rightBarAnchor');
+
+    // Run this on scroll events.
+    $window.scroll(function() {
+        var window_top = $window.scrollTop();
+        var div_top = $rightBarAnchor.offset().top - 80;
+        if (window_top > div_top) {
+            // Make the div sticky.
+            $rightBar.addClass('stick');
+            $rightBarAnchor.height($rightBar.height());
+        }
+        else {
+            // Unstick the div.
+            $rightBar.removeClass('stick');
+            $rightBarAnchor.height(0);
+        }
+    });
+});
+
 /* This is code to load in the Current NetApp stock price
  * I am using the Yahoo! Stock API: YQL
  * To change the stock that loads, change the symbol variable
@@ -42,6 +68,7 @@ function getData() {
 	});
 }
 
+/* This code is to simply load the date in the bottom corner */
 function checkDate() {
 	function makeArray() {
 		for (i = 0; i < makeArray.arguments.length; i ++)
