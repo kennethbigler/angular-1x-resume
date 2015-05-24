@@ -214,6 +214,13 @@ figcaption {
 	font-style: italic;
 }
 
+img#stackOverflow {
+	max-width: 208px;
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
 /* Idea taken from http://jsfiddle.net/HQS8s/ */
 .stick {
     position: fixed;
