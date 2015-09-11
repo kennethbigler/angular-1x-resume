@@ -1,0 +1,48 @@
+<div onload="leftBar()">
+    <!-- Add an anchor for positioning reasons -->
+    <div id="rightBarAnchor"></div>
+
+    <!-- LeftHand Column -->
+    <div class="col-md-2 col-sm-3" id="rightBar">
+        <!-- Quicklinks -->
+        <div class="leftContent">
+        	<h3 class="leftHeader">Quicklinks</h3>
+          	<ul>
+                <li><a href="https://www.groupright.net/g/">GroupRight</a></li>
+                <li><a href="http://www.teslamotors.com/">Tesla Motors</a></li>
+                <li><a href="http://www.netapp.com/us/">NetApp</a></li>
+            </ul>
+        <!-- /Quicklinks -->
+        </div>
+        
+        <!-- Code for Stock Quote -->
+        <div class="leftContent">
+            <h3 class="leftHeader"><a href="http://quote.yahoo.com/q?s=TSLA&amp;d=1d">Tesla Stock Quote</a></h3>
+            <div class="minilink" align="center">
+                Tesla Stock Quote: <b>${{ tsla.total | number:2 }}</b>&nbsp;&nbsp;(<span ng-style='tsla.color'><b>{{ tsla.change | number:2 }}</b></span>)
+            </div>
+            <div class="minilink" align="center"></div>
+        <!-- /Stock Quote -->
+        </div>
+        
+        <!-- Code for Stock Quote -->
+        <div class="leftContent">
+            <h3 class="leftHeader"><a href="http://quote.yahoo.com/q?s=NTAP&amp;d=1d">NetApp Stock Quote</a></h3>
+            <div class="minilink" align="center">
+                NetApp Stock Quote: <b>${{ ntap.total | number:2 }}</b>&nbsp;&nbsp;(<span ng-style='ntap.color'><b>{{ ntap.change | number:2 }}</b></span>)
+            </div>
+            <div class="minilink" align="center"></div>
+        <!-- /Stock Quote -->
+        </div>
+
+        <!-- Stack Overflow -->
+        <div class="leftContent">
+            <h3 class="leftHeader"><a href="http://stackoverflow.com/users/4830309/ken-bigler">Stack Overflow</a></h3>
+            <a href="http://stackoverflow.com/users/4830309/ken-bigler">
+                <img src="http://stackoverflow.com/users/flair/4830309.png?theme=dark" id="stackOverflow" alt="profile for Ken Bigler at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Ken Bigler at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+            </a>
+        </div>
+        
+    <!-- /LeftHand Side -->
+    </div>
+</div>

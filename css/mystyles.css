@@ -57,6 +57,10 @@ footer a {
 	color: white;
 }
 
+body {
+	background-color: #FAFAFA;
+}
+
 body > .container {
 	padding-top: 30px;
 }
@@ -66,6 +70,10 @@ div.leftContent {
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
+	background-color: white;
+	-webkit-box-shadow: .0625em .3125em .625em #888;
+       -moz-box-shadow: .0625em .3125em .625em #888;
+    		box-shadow: .0625em .3125em .625em #888;
 }
 .leftHeader {
 	background-color: #145E8C;
@@ -93,6 +101,10 @@ div.mainContent {
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
+	background-color: white;
+	-webkit-box-shadow: .0625em .3125em .625em #888;
+       -moz-box-shadow: .0625em .3125em .625em #888;
+    		box-shadow: .0625em .3125em .625em #888;
 }
 
 .mainHeader {
