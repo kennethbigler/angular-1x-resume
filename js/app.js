@@ -1,7 +1,9 @@
-var app = angular.module('myApp',['ngRoute']);
+var app = angular.module('myApp',['ngRoute', 'ngAnimate']);
 
 // configure routes
 app.config(function($routeProvider, $locationProvider) {
+	// use the HTML5 History API
+	$locationProvider.html5Mode(true);
 	$routeProvider
 		// Home Page
 		.when('/', {
@@ -18,14 +20,8 @@ app.config(function($routeProvider, $locationProvider) {
 		})
 		.when('/projects', {
 			templateUrl: 'js/views/projects.html',
-		});
-		/*.otherwise({
-			redirectTo: '/'
-		});*/
-
-
-	// use the HTML5 History API
-	$locationProvider.html5Mode(true);
+		})
+		.otherwise({ redirectTo: '/' });
 });
 	
 /*	.when('/', {
