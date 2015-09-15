@@ -64,14 +64,28 @@ footer a {
 	color: white;
 }
 
+<<<<<<< HEAD
 /********************\
      Left Content
 \********************/
+=======
+body {
+	background-color: #FAFAFA;
+}
+
+body > .container {
+	padding-top: 30px;
+}
+
+>>>>>>> 06b53808df4d5e75ea83a4da2ded4d2a2ce08217
 div.leftContent {
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
+<<<<<<< HEAD
 	border: 3px solid #145E8C;
+=======
+>>>>>>> 06b53808df4d5e75ea83a4da2ded4d2a2ce08217
 	background-color: white;
 	-webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
@@ -113,7 +127,10 @@ div.mainContent {
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
+<<<<<<< HEAD
 	border: 3px solid #F25C05;
+=======
+>>>>>>> 06b53808df4d5e75ea83a4da2ded4d2a2ce08217
 	background-color: white;
 	-webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
