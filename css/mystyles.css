@@ -18,33 +18,40 @@ p, div {
  * orange: F25C05
  * end code for colors */
 
+/********************\
+    Global Styles
+\********************/
+body {
+	background-color: #FAFAFA;
+}
+
+body > .container {
+	padding-top: 30px;
+}
+
 .jumbotron {
 	position: relative;
 	top: 0;
-	background-color: #145E8C;
 	color: white;
-	border-radius: 0 !important;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 30px;
+	padding-top:	10px;
+	padding-bottom:	10px;
+	margin-top:		30px;
+	border-radius:	0 !important;
+	background-color: #145E8C;
 }
 
-ul.nav li.dropdown:hover ul.dropdown-menu {
-    display: block;
-}
 
-.leftContent ul {
-	padding-left: 15px;
-	margin-bottom: 0px;
-}
 
+/********************\
+        Footer
+\********************/
 footer {
 	position: relative;
-	left: 0;
-	right: 0;
-	height: 50px;
-	background-color: #222426;
+	left:	 0;
+	right:	 0;
+	height:	 50px;
 	padding: 0;
+	background-color: #222426;
 }
 
 footer p {
@@ -57,21 +64,25 @@ footer a {
 	color: white;
 }
 
-body > .container {
-	padding-top: 30px;
-}
-
+/********************\
+     Left Content
+\********************/
 div.leftContent {
-	border: 3px solid #145E8C;
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
+	border: 3px solid #145E8C;
+	background-color: white;
+	-webkit-box-shadow: .0625em .3125em .625em #888;
+       -moz-box-shadow: .0625em .3125em .625em #888;
+    		box-shadow: .0625em .3125em .625em #888;
 }
+
 .leftHeader {
 	background-color: #145E8C;
 	margin: 0;
-	margin-bottom:5px;
-	margin-left: -10px;
+	margin-bottom: 5px;
+	margin-left:  -10px;
 	margin-right: -10px;
 	padding: 2px;
 	padding-bottom: 5px;
@@ -83,111 +94,70 @@ div.leftContent {
 	text-decoration: none;
 }
 
+.leftContent ul {
+	padding-left:  15px;
+	margin-bottom: 0px;
+}
+
+
+
+/********************\
+     Main Content
+\********************/
 .mainHeader a {
 	color: white;
 	text-decoration: none;
 }
 
 div.mainContent {
-	border: 3px solid #F25C05;
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
+	border: 3px solid #F25C05;
+	background-color: white;
+	-webkit-box-shadow: .0625em .3125em .625em #888;
+       -moz-box-shadow: .0625em .3125em .625em #888;
+    		box-shadow: .0625em .3125em .625em #888;
 }
 
 .mainHeader {
 	background-color: #F25C05;
 	margin: 0;
-	margin-bottom:5px;
-	margin-left: -10px;
+	margin-bottom: 5px;
+	margin-left:  -10px;
 	margin-right: -10px;
 	padding: 2px;
 	padding-bottom: 5px;
 	color: white;
 }
 
-img.banner-img {
-	width: 100%;
-	max-width: 850px;
-	display: block;
-	margin: auto;
-	margin-bottom: 15px;
+
+
+/********************\
+        Images
+\********************/
+img.resp {
+	width:		100%;
+	display:	block;
+	margin:		auto;
 }
 
-.form-group {
-	margin: 0;
+figcaption {
+	color: #999;
+	text-align: center;
+	font-style: italic;
 }
 
-.searchButton {
-	margin-top: 10px;
-	padding: 6px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-
-.trumbaCalendar {
-	vertical-align: top;
-	background-color: #FFF;
-}
-
-.list-group {
-	margin-bottom: 0;
-}
-
-.alert-danger {
-	margin-bottom: 15px !important;
-	border-radius: 0 !important;
-}
-
-nav > div.container > .pull-right {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-/* Photo Styles */
-
-/* End Photo Styles */
-#groupright {
-	max-width: 572px;
-}
-
-#scheduler {
-	max-width: 494px;
-}
-
-#hqa {
-	max-width: 300px;
-}
-
-#michelle {
-	max-width: 526px;
-}
-
-#kidzkamp {
-	max-width: 535px;
-}
-
-#aboutme {
-	max-width: 308px;
-}
-
-#mapquiz {
-	max-width: 458px;
-}
-
-#main_photo {
-	width: 100%;
-	max-width: 541px;
-	display: block;
-	margin: auto;
-}
-
-#miranda {
-	width: 100%;
-	max-width: 764px;
-	display: block;
-	margin: auto;
-}
+#groupright { max-width: 572px; }
+#scheduler { max-width: 494px; }
+#hqa { max-width: 300px; }
+#michelle {	max-width: 526px; }
+#kidzkamp {	max-width: 535px; }
+#aboutme { max-width: 308px; }
+#mapquiz { max-width: 458px; }
+#main_photo { max-width: 541px; }
+#miranda { max-width: 764px; }
+img#stackOverflow {	max-width:208px; }
 
 img.corp_logo {
 	float: right;
@@ -197,39 +167,48 @@ img.corp_logo {
 }
 
 img.site {
-	width:100%;
-	display:block;
-	margin:auto;
-	cursor:pointer;
-	cursor:hand;
-	margin-bottom:10px;
-	-moz-box-shadow: .0625em .3125em .625em #888;
-	-webkit-box-shadow: .0625em .3125em .625em #888;
-	box-shadow: .0625em .3125em .625em #888;
-}
-
-figcaption {
-	text-align: center;
-	color: #999;
-	font-style: italic;
-}
-
-img#stackOverflow {
-	max-width: 208px;
-	width: 100%;
+	width:	 100%;
 	display: block;
-	margin: auto;
+	margin:	 auto;
+	cursor:	 pointer;
+	cursor:	 hand;
+	margin-bottom: 10px;
+	-webkit-box-shadow: .0625em .3125em .625em #888;
+       -moz-box-shadow: .0625em .3125em .625em #888;
+    		box-shadow: .0625em .3125em .625em #888;
+}
+
+/********************\
+        Misc
+\********************/
+.form-group {
+	margin: 0;
+}
+
+.list-group {
+	margin-bottom: 0;
 }
 
 /* Idea taken from http://jsfiddle.net/HQS8s/ */
 .stick {
     position: fixed;
-    top: 80px;
-    right: 0px;
+    top:	80px;
+    right: 	0px;
 }
 /* End idea */
 
-/* Navbar styles
+
+
+/********************\
+      Navigation
+\********************/
+nav > div.container > .pull-right {
+	padding-right: 0;
+	padding-left:  0;
+}
+
+/************************************************************************************** 
+ * Navbar styles
  * Generated by TWBSColor
  * My Link:
  * http://work.smarchal.com/twbscolor/css/f20544222426f2f2f2f2f2f21
@@ -307,4 +286,93 @@ img#stackOverflow {
     background-color: #222426;
   }
 }
-/* End of Search Bar Styles */
+/**************************************************************************************
+ * End of Search Bar Styles */
+
+/**************************************************************************************
+ * Animation Styles from the internet */
+/* rotate and fall */
+@-webkit-keyframes rotateFall {
+	0%	 { -webkit-transform: rotateZ(0deg); }
+	20%  { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
+	40%  { -webkit-transform: rotateZ(17deg); }
+	60%  { -webkit-transform: rotateZ(16deg); }
+	100% { -webkit-transform: translateY(100%) rotateZ(17deg); }
+}
+@-moz-keyframes rotateFall {
+	0% 	 { -moz-transform: rotateZ(0deg); }
+	20%  { -moz-transform: rotateZ(10deg); -moz-animation-timing-function: ease-out; }
+	40%  { -moz-transform: rotateZ(17deg); }
+	60%  { -moz-transform: rotateZ(16deg); }
+	100% { -moz-transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes rotateFall {
+	0% 	 { transform: rotateZ(0deg); }
+	20%  { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+	40%  { transform: rotateZ(17deg); }
+	60%  { transform: rotateZ(16deg); }
+	100% { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* scale up */
+@keyframes scaleUp {
+	from 	{ opacity: 0.3; transform: scale(0.8); }
+}
+@-moz-keyframes scaleUp {
+	from 	{ opacity: 0.3; -moz-transform: scale(0.8); }
+}
+@-webkit-keyframes scaleUp {
+	from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(100%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(100%); }
+	to 		{ -webkit-transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+	from 	{ transform:translateY(100%); }
+	to 		{ transform: translateY(0); }
+}
+@-moz-keyframes slideInUp {
+	from 	{ -moz-transform:translateY(100%); }
+	to 		{ -moz-transform: translateY(0); }
+}
+@-webkit-keyframes slideInUp {
+	from 	{ -webkit-transform:translateY(100%); }
+	to 		{ -webkit-transform: translateY(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@-webkit-keyframes rotateOutNewspaper {
+	to 		{ -webkit-transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+@-moz-keyframes rotateOutNewspaper {
+	to 		{ -moz-transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+@keyframes rotateOutNewspaper {
+	to 		{ transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+/**************************************************************************************
+ * End of Animation Styles from the internet */
