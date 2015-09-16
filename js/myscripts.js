@@ -44,22 +44,5 @@ function rightBar() {
 
 function menuSelection(n) {
     $('.active').removeClass('active');
-    switch(n) {
-        case 1:
-            $('#bhome').addClass('active');
-            break;
-        case 2:
-            $('#bwork').addClass('active');
-            break;
-        case 3:
-            $('#bclass').addClass('active');
-            break;
-        case 4:
-            $('#bactive').addClass('active');
-            break;
-        case 5:
-            $('#bproject').addClass('active');
-            break;
-        default:
-    }
+    $('#button' + n).addClass('active');
 }
