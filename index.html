@@ -8,7 +8,7 @@
     <!-- Device Compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Keywords for SEO, feel free to ignore this, it's an Intranet -->
-    <meta name="keywords" content="Ken, Kenneth, Bigler, Kenneth Bigler, Ken Bigler, Resume, HTML, CSS, JavaScript, C++, C, Software Developer, Web, Web Developer, Web Technologist, Santa Clara, SCU, scu, Santa Clara University">
+    <meta name="keywords" content="Ken, Kenneth, Bigler, Kenneth Bigler, Ken Bigler, Resume, HTML, CSS, JavaScript, C++, C, Software Developer, Web, Web Developer, Web Technologist, Santa Clara, SCU, scu, Santa Clara University, Software Engineer, Engineering, Software Engineering, Software Development">
     <!-- A short description of my website -->
     <meta name="description" content="This is a site about Kenneth Bigler, Student at Santa Clara University, including his work, interests, and resume">
     <!-- I made this template, feel free to direct any questions about the template to kennethbigler@gmail.com-->
@@ -26,7 +26,7 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/mystyles.css">
-    <base href="/home/">
+    <base href="/home/"/>
 </head>
 <!---------------------------------------------------------------------------------------------------------------->
 
@@ -49,11 +49,11 @@
             <!-- Menu Items -->
             <div id="navbar" class="collapse navbar-collapse col-sm-3">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/home/">Home</a></li>
-                    <li><a href="work">Work</a></li>
-                    <li><a href="classes">Classes</a></li>
-                    <li><a href="activities">Activities</a></li>
-                    <li><a href="projects">Projects</a></li>
+                    <li id="button1" onclick="menuSelection(1)" class="active"><a href="/home/">Home</a></li>
+                    <li id="button2" onclick="menuSelection(2)"><a href="work">Work</a></li>
+                    <li id="button3" onclick="menuSelection(3)"><a href="classes">Classes</a></li>
+                    <li id="button4" onclick="menuSelection(4)"><a href="activities">Activities</a></li>
+                    <li id="button5" onclick="menuSelection(5)"><a href="projects">Projects</a></li>
                 </ul>
             <!--/Menu Items -->
             </div>
@@ -95,6 +95,7 @@
 <!-- Angular Lasted compiled and minified stable release -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-animate.js"></script>
 <!-- My own custom Javascript Functions -->
 <script src="js/myscripts.js"></script>
 <script src="js/app.js"></script>

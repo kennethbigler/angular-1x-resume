@@ -41,3 +41,8 @@ function rightBar() {
         setTimeout(rightBar, 50); //wait 50 ms, then try again
     }
 }
+
+function menuSelection(n) {
+    $('.active').removeClass('active');
+    $('#button' + n).addClass('active');
+}
