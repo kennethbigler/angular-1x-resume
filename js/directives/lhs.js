@@ -4,7 +4,6 @@ app.directive('lhs', function() {
     templateUrl: 'js/directives/lhs.html',
     controller: function($scope, quote) {
 		$scope.tsla = quote.getQ('tsla');
-		$scope.ntap = quote.getQ('ntap');
 	}
   };
 });
