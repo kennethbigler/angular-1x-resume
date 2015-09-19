@@ -151,6 +151,7 @@ figcaption {
 }
 
 #groupright { max-width: 572px; }
+#timecard { max-width: 572px; }
 #scheduler { max-width: 494px; }
 #hqa { max-width: 300px; }
 #michelle {	max-width: 526px; }
@@ -172,8 +173,6 @@ img.site {
 	width:	 100%;
 	display: block;
 	margin:	 auto;
-	cursor:	 pointer;
-	cursor:	 hand;
 	margin-bottom: 10px;
 	-webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
@@ -196,6 +195,11 @@ img.site {
     position: fixed;
     top:	80px;
     right: 	0px;
+}
+
+.handc {
+	cursor: pointer;
+	cursor: hand;
 }
 /* End idea */
 

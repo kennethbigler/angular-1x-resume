@@ -18,7 +18,7 @@
         <div class="leftContent">
             <h3 class="leftHeader"><a href="http://quote.yahoo.com/q?s=TSLA&amp;d=1d">Tesla Stock Quote</a></h3>
             <div class="minilink" align="center">
-                Tesla Stock Quote: <b>${{ tsla.total | number:2 }}</b>&nbsp;&nbsp;(<span ng-style='tsla.color'><b>{{ tsla.change | number:2 }}</b></span>)
+                Tesla Stock Quote: <b>${{ tsla.total | number:2 }}</b>&nbsp;&nbsp;(<span ng-style='tsla.color'><b>{{ tsla.change | number:2 }}, {{ tsla.change / tsla.total * 100 | number:2 }}%</b></span>)
             </div>
             <div class="minilink" align="center"></div>
         </div><!-- /Stock Quote -->

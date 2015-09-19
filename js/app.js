@@ -48,6 +48,7 @@ app.factory('quote', function($http) {
 
 		$http.get(url + '?q=' + qstring + "&format=json&diagnostics=true&env=http://datatables.org/alltables.env") 
 		.success(function(data) {
+			console.log(data);
 			//retrieve specific information I want to display
 			q.total = data.query.results.quote.LastTradePriceOnly;
 			q.change = data.query.results.quote.Change;
