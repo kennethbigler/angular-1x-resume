@@ -3,11 +3,13 @@
 
 /* code for fonts */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans';
+    font-family: 'Inconsolata', ;
 }
 p, div {
-    font-family: 'Open Sans';
+    font-family: 'Inconsolata', ;
 }
+
+
 /* end code for fonts */
 
 /* code for colors 
@@ -133,6 +135,9 @@ div.mainContent {
 	color: white;
 }
 
+.emph {
+	font-size: 18px; 
+}
 
 
 /********************\
@@ -145,9 +150,10 @@ img.resp {
 }
 
 figcaption {
-	color: #999;
+	color: #002F2F;
 	text-align: center;
 	font-style: italic;
+	margin-bottom: 10px;
 }
 
 #groupright { max-width: 572px; }
@@ -196,14 +202,12 @@ img.site {
     top:	80px;
     right: 	0px;
 }
+/* End idea */
 
 .handc {
 	cursor: pointer;
 	cursor: hand;
 }
-/* End idea */
-
-
 
 /********************\
       Navigation
