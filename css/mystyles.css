@@ -13,20 +13,20 @@ p, div {
 /* end code for fonts */
 
 /* code for colors 
- * l-grey:	#FAFAFA;
+ * l-grey:	#FAFAFA; NOT USED
 
- * Green:	#468966;
- * Tan:		#FFF0A5;
- * Orange:	#FFB03B;
- * Red:		#B64926;
- * Brown:	#8E2800;
+ * L-grey:	#E7E8D1; NOT USED
+ * Brown:	#D3CEAA; NOT USED
+ * Tan: 	#FBF7E4;
+ * D-grey:  #424242;
+ * Red: 	#8E001C;
  * end code for colors */
 
 /********************\
     Global Styles
 \********************/
 body {
-	background-color: #FFF0A5;
+	background-color: #FBF7E4;
 }
 
 body > .container {
@@ -41,7 +41,7 @@ body > .container {
 	padding-bottom:	10px;
 	margin-top:		30px;
 	border-radius:	0 !important;
-	background-color: #468966;
+	background-color: #424242;
 	-webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
     		box-shadow: .0625em .3125em .625em #888;
@@ -58,7 +58,7 @@ footer {
 	right:	 0;
 	height:	 50px;
 	padding: 0;
-	background-color: #8E2800;
+	background-color: #424242;
 }
 
 footer p {
@@ -78,7 +78,7 @@ div.leftContent {
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
-	border: 3px solid #8E2800;
+	border: 3px solid #424242;
 	background-color: white;
 	-webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
@@ -86,7 +86,7 @@ div.leftContent {
 }
 
 .leftHeader {
-	background-color: #8E2800;
+	background-color: #424242;
 	margin: 0;
 	margin-bottom: 5px;
 	margin-left:  -10px;
@@ -120,7 +120,7 @@ div.mainContent {
 	padding: 10px;
 	margin-bottom:10px;
 	padding-top: 0;
-	border: 3px solid #468966;
+	border: 3px solid #8E001C;
 	background-color: white;
 	-webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
@@ -128,7 +128,7 @@ div.mainContent {
 }
 
 .mainHeader {
-	background-color: #468966;
+	background-color: #8E001C;
 	margin: 0;
 	margin-bottom: 5px;
 	margin-left:  -10px;
@@ -153,7 +153,7 @@ img.resp {
 }
 
 figcaption {
-	/*color: #8E2800;*/
+	/*color: #D3CEAA;*/
 	text-align: center;
 	font-style: italic;
 	margin-bottom: 10px;
@@ -227,8 +227,8 @@ nav > div.container > .pull-right {
  * http://work.smarchal.com/twbscolor/css/f20544222426FFFFFFFFFFFF1
  */
 .navbar-default {
-  background-color: #B64926;
-  border-color: #468966;
+  background-color: #8E001C;
+  border-color: #424242;
 }
 .navbar-default .navbar-brand {
   color: #FFFFFF;
@@ -254,24 +254,24 @@ nav > div.container > .pull-right {
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
   color: #FFFFFF;
-  background-color: #468966;
+  background-color: #424242;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
   background-color: #f20544;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #FFFFFF;
-  background-color: #468966;
+  background-color: #424242;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #FFFFFF;
-  background-color: #468966;
+  background-color: #424242;
 }
 .navbar-default .navbar-toggle {
-  border-color: #468966;
+  border-color: #424242;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #468966;
+  background-color: #424242;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFFFFF;
@@ -296,7 +296,7 @@ nav > div.container > .pull-right {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #FFFFFF;
-    background-color: #468966;
+    background-color: #424242;
   }
 }
 /**************************************************************************************
@@ -397,10 +397,10 @@ nav > div.container > .pull-right {
 /********************\
       Animation
 \********************/
-.ng-enter {
-	animation: scaleUp 0.4s both ease-in;
+/*.ng-enter {
+	animation: slideInUp 0.4s both ease-in;
 	z-index: 8888;
-}
+}*/
 .ng-leave {
 	animation: slideOutLeft 0.4s both ease-in;
 	z-index: 9999;
