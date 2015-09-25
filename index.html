@@ -37,7 +37,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
         	<!-- Inactive Text About Me -->
-        	<a class="navbar-brand" onclick="menuSelection(1)" href="/home/">Kenneth Bigler</a>
+        	<a class="navbar-brand" ng-click="menuSelection(1)" href="/home/#/">Kenneth Bigler</a>
             <!-- Bootstrap Colapsed Menu Design -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -49,11 +49,11 @@
             <!-- Menu Items -->
             <div id="navbar" class="collapse navbar-collapse col-sm-3">
                 <ul class="nav navbar-nav">
-                    <li id="button1" onclick="menuSelection(1)" class="active"><a href="/home/">Home</a></li>
-                    <li id="button2" onclick="menuSelection(2)"><a href="work">Work</a></li>
-                    <li id="button3" onclick="menuSelection(3)"><a href="classes">Classes</a></li>
-                    <li id="button4" onclick="menuSelection(4)"><a href="activities">Activities</a></li>
-                    <li id="button5" onclick="menuSelection(5)"><a href="projects">Projects</a></li>
+                    <li id="button1" ng-click="menuSelection(1)" class="active"><a href="/home/#/">Home</a></li>
+                    <li id="button2" ng-click="menuSelection(2)"><a href="#/work">Work</a></li>
+                    <li id="button3" ng-click="menuSelection(3)"><a href="#/classes">Classes</a></li>
+                    <li id="button4" ng-click="menuSelection(4)"><a href="#/activities">Activities</a></li>
+                    <li id="button5" ng-click="menuSelection(5)"><a href="#/projects">Projects</a></li>
                 </ul>
             </div><!--/Menu Items -->
         </div><!-- /container -->

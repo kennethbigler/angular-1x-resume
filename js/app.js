@@ -1,10 +1,11 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
-// configure routes
-        .config(function ($routeProvider, $locationProvider) {
-            "use strict";
+/*global $, angular*/
 
-            // use the HTML5 History API
-            $locationProvider.html5Mode(true);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
+        // configure routes
+        // pass in $locationProvider requires .htaccess file
+        .config(function ($routeProvider) {
+            "use strict";
+            
             $routeProvider
                 .when('/', {
                     templateUrl: 'js/views/about.html'
@@ -22,6 +23,9 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
                     templateUrl: 'js/views/projects.html'
                 })
                 .otherwise({ redirectTo: '/' });
+            
+            // use the HTML5 History API
+            // $locationProvider.html5Mode(true);
         });
 
 /*	.when('/', {
@@ -50,7 +54,7 @@ app.factory('quote', function ($http) {
 
 		$http.get(url + '?q=' + qstring + "&format=json&diagnostics=true&env=http://datatables.org/alltables.env")
             .success(function (data) {
-                console.log(data);
+                //console.log(data);
                 //retrieve specific information I want to display
                 q.total = data.query.results.quote.LastTradePriceOnly;
                 q.change = data.query.results.quote.Change;
