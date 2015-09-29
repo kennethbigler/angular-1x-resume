@@ -8,9 +8,7 @@ app.directive('lhs', function () {
         controller: function ($scope, quote) {
             $scope.tsla = quote.getQ('tsla');
             setInterval(function () {
-                $scope.$apply(function () {
-                    $scope.tsla = quote.getQ('tsla');
-                });
+                $scope.$apply(function () { $scope.tsla = quote.getQ('tsla'); });
             }, 60000);
         }
     };

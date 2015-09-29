@@ -7,9 +7,7 @@ app.controller('MainController', function ($scope) {
 	//get the date for the bottom corner
 	$scope.date = new Date();
     
-    function closeNav() {
-        $("#navbar").collapse('hide');
-    }
+    function closeNav() { $("#navbar").collapse('hide'); }
     
     $scope.menuSelection = function (n) {
         $('.active').removeClass('active');

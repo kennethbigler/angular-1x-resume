@@ -9,41 +9,30 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
             $routeProvider
                 .when('/', {
                     templateUrl: 'js/views/about.html'
-                })
-                .when('/work', {
+                    /*controller: 'HomeController'*/
+                }).when('/work', {
                     templateUrl: 'js/views/work.html'
-                })
-                .when('/classes', {
+                }).when('/classes', {
                     templateUrl: 'js/views/classes.html'
-                })
-                .when('/activities', {
+                }).when('/activities', {
                     templateUrl: 'js/views/activities.html'
-                })
-                .when('/projects', {
+                }).when('/projects', {
                     templateUrl: 'js/views/projects.html'
-                })
-                .otherwise({ redirectTo: '/' });
-            
+                }).otherwise({ redirectTo: '/' });
             // use the HTML5 History API
             // $locationProvider.html5Mode(true);
         });
 
-/*	.when('/', {
-		templateUrl: 'js/views/about.html',
-		controller: 'HomeController'
-	})
-*/
-
 //This is the query done to get the Stock Quotes
 app.factory('quote', function ($http) {
     "use strict";
-	// prepare data object for tesla stock quote
+	    // prepare data object for tesla stock quote
 	var q = {
 		total:	0,
 		change: 0,
 		color:	{"color": "green"}
 	},
-	// prepare the object for return
+	    // prepare the object for return
 	    service = {};
 
 	// add server query function to get stock information
@@ -66,13 +55,9 @@ app.factory('quote', function ($http) {
                 }
                 //return needed variable
                 return q;
-            }).error(function (err) {
-                return err;
-            });
-
+            }).error(function (err) { return err; });
 		// idk why I need this, but this seems to be what returns, it is the needed object data
 		return q;
 	};
-
 	return service;
 });
