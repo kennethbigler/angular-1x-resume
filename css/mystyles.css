@@ -27,7 +27,9 @@ body > .container {
 	margin-top:		30px;
 	border-radius:	0 !important;
 	background-color: #424242;
-	-webkit-box-shadow: .0625em .3125em .625em #888;
+}
+.shadow {
+    -webkit-box-shadow: .0625em .3125em .625em #888;
        -moz-box-shadow: .0625em .3125em .625em #888;
     		box-shadow: .0625em .3125em .625em #888;
 }
@@ -57,9 +59,6 @@ div.leftContent {
 	padding-top: 0;
 	border: 3px solid #424242;
 	background-color: white;
-	-webkit-box-shadow: .0625em .3125em .625em #888;
-       -moz-box-shadow: .0625em .3125em .625em #888;
-    		box-shadow: .0625em .3125em .625em #888;
 }
 .leftHeader {
 	background-color: #424242;
@@ -91,9 +90,6 @@ div.mainContent {
 	padding-top: 0;
 	border: 3px solid #8E001C;
 	background-color: white;
-	-webkit-box-shadow: .0625em .3125em .625em #888;
-       -moz-box-shadow: .0625em .3125em .625em #888;
-    		box-shadow: .0625em .3125em .625em #888;
 }
 .mainHeader {
 	background-color: #8E001C;
@@ -131,20 +127,12 @@ figcaption {
 #main_photo { max-width: 365px; }
 #miranda { max-width: 764px; }
 img#stackOverflow {	max-width:208px; }
+img.site { margin-bottom: 10px; }
 img.corp_logo {
 	float: right;
 	max-width: 150px;
 	padding-top: .625em;
 	margin-left: .625em;
-}
-img.site {
-	width:	 100%;
-	display: block;
-	margin:	 auto;
-	margin-bottom: 10px;
-	-webkit-box-shadow: .0625em .3125em .625em #888;
-       -moz-box-shadow: .0625em .3125em .625em #888;
-    		box-shadow: .0625em .3125em .625em #888;
 }
 
 /***** Misc *****/

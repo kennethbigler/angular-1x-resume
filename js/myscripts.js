@@ -1,10 +1,7 @@
 // myscripts.js for homepage
-
-/*global $, jQuery, alert*/
-
+/*global $*/
 /* This code is to make the side bar not scroll after the initial hiding of the jumbotron
- * Idea from http://jsfiddle.net/HQS8s/
- */
+ * Idea from http://jsfiddle.net/HQS8s/ */
 function rightBar() {
     "use strict";
     if ($('#rightBar').is(':visible')) {
