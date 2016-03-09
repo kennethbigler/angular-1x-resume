@@ -18,7 +18,7 @@
         'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js',
         'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js',
         'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.min.js',
-        'assets/js/myscripts.js',
+        'assets/js/analytics.js',
         'app/app.modules.js',
         'app/app.routes.js',
         'app/directives/lhs.js',
@@ -54,16 +54,16 @@
             <!-- Items -->
             <div id="navbar" class="collapse navbar-collapse col-sm-3">
                 <ul class="nav navbar-nav">
-                    <li id="button1" ng-click="menuSelection(1)" class="active"><a href="/#/">Home</a></li>
-                    <li id="button2" ng-click="menuSelection(2)"><a href="#/work">Work</a></li>
-                    <li id="button3" ng-click="menuSelection(3)"><a href="#/classes">Classes</a></li>
-                    <li id="button4" ng-click="menuSelection(4)"><a href="#/activities">Activities</a></li>
-                    <li id="button5" ng-click="menuSelection(5)"><a href="#/projects">Projects</a></li>
+                    <li ng-class="getClass('/')"><a href="#/" ng-click="closeNav()">Home</a></li>
+                    <li ng-class="getClass('/work')"><a href="#/work" ng-click="closeNav()">Work</a></li>
+                    <li ng-class="getClass('/classes')"><a href="#/classes" ng-click="closeNav()">Classes</a></li>
+                    <li ng-class="getClass('/activities')"><a href="#/activities" ng-click="closeNav()">Activities</a></li>
+                    <li ng-class="getClass('/projects')"><a href="#/projects" ng-click="closeNav()">Projects</a></li>
                 </ul>
             </div><!-- /Items -->
         </nav>
         <!-- Header Area -->
-        <div class="jumbotron shadow col-sm-12">
+        <div class="jumbotron shadow">
             <h1>Kenneth Bigler</h1>
         </div>
         <!-- Main Content loaded via Angular -->
