@@ -7,14 +7,6 @@ app.controller('MainController', ['$scope', '$location', function ($scope, $loca
 	//get the date for the bottom corner
 	$scope.date = new Date();
     
-    function closeNav() { $("#navbar").collapse('hide'); }
-    
-    $scope.menuSelection = function (n) {
-        $('.active').removeClass('active');
-        $('#button' + n).addClass('active');
-        closeNav();
-    };
-    
     // set a tab as the active tab
     $scope.getClass = function (path) {
         if ($location.path() === path) {
