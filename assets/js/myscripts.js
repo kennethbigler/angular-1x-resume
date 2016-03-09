@@ -2,36 +2,36 @@
 /*global $*/
 /* This code is to make the side bar not scroll after the initial hiding of the jumbotron
  * Idea from http://jsfiddle.net/HQS8s/ */
-function rightBar() {
+function leftBar() {
     "use strict";
-    if ($('#rightBar').is(':visible')) {
+    if ($('#leftBar').is(':visible')) {
         // Cache selectors for faster performance.
         var $window = $(window),
-            $rightBar = $('#rightBar'),
-            $rightBarAnchor = $('#rightBarAnchor');
+            $leftBar = $('#leftBar'),
+            $leftBarAnchor = $('#leftBarAnchor');
 
         // Run this on scroll events.
         $window.scroll(function () {
             var window_top = $window.scrollTop(),
-                div_top = $rightBarAnchor.offset().top - 80;
+                div_top = $leftBarAnchor.offset().top - 80;
             if (window_top > div_top) {
                 // Make the div sticky.
-                $rightBar.addClass('stick');
-                $rightBarAnchor.height($rightBar.height());
+                $leftBar.addClass('stick');
+                $leftBarAnchor.height($leftBar.height());
             } else {
                 // Unstick the div.
-                $rightBar.removeClass('stick');
-                $rightBarAnchor.height(0);
+                $leftBar.removeClass('stick');
+                $leftBarAnchor.height(0);
             }
         });
     } else {
-        setTimeout(rightBar, 50); //wait 50 ms, then try again
+        setTimeout(leftBar, 50); //wait 50 ms, then try again
     }
 }
 
 $(document).ready(function () {
     "use strict";
-    rightBar();
+    //leftBar();
 });
 
 // Code for Google Analytics Tracking
