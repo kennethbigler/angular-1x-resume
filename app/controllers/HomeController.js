@@ -2,7 +2,7 @@
 
 /*global $, app*/
 
-app.controller('MainController', ['$scope', '$location', function ($scope, $location) {
+app.controller('HomeController', ['$scope', '$location', function ($scope, $location) {
     "use strict";
 	//get the date for the bottom corner
 	$scope.date = new Date();

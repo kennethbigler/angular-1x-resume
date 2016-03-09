@@ -32,7 +32,7 @@
     </script>
 </head>
 <!-- Body -->
-<body ng-app="myApp" ng-controller="MainController">
+<body ng-app="myApp" ng-controller="HomeController">
     <div></div>
     <!-- Bootstrap CSS 3 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"  type='text/css'>
@@ -68,13 +68,11 @@
         </div>
         <!-- Main Content loaded via Angular -->
         <div ng-view></div>
-        <!-- Side Bar loaded via Angluar -->
-        <lhs />
     </div><!-- /container -->
     <!-- Footer -->
     <footer class="footer">
-        <p style="display:inline;">{{ date | date:'fullDate' }}</p>
-        <p style="float:right;"><a href="mailto:kennethbigler@gmail.com?subject=Feedback">Feedback</a></p>
+        <p class="pull-left">{{ date | date:'fullDate' }}</p>
+        <p class="pull-right"><a href="mailto:kennethbigler@gmail.com?subject=Feedback">Feedback</a></p>
     </footer>
     <!-- Closing -->
 </body>
