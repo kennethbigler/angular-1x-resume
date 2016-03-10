@@ -6,6 +6,7 @@ app.controller('HomeController', ['$scope', '$location', function ($scope, $loca
     "use strict";
 	//get the date for the bottom corner
 	$scope.date = new Date();
+    $scope.imgURL = "assets/img/";
     
     // set a tab as the active tab
     $scope.getClass = function (path) {
