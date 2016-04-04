@@ -1,5 +1,4 @@
 /*global app*/
-
 // configure routes
 // pass in $locationProvider requires .htaccess file
 app.config(function ($routeProvider) {

@@ -1,5 +1,3 @@
-//HomeController.js
-
 /*global $, app*/
 
 app.controller('HomeController', ['$scope', '$location', function ($scope, $location) {
