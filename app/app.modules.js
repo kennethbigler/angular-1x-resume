@@ -3,7 +3,7 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
         //This is the query done to get the Stock Quotes
         .factory('quote', function ($http) {
             "use strict";
-            var service = {},
+            var factory = {},
                 q = {
                     total:	0,
                     change: 0,
@@ -11,7 +11,7 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
                 };
 
             // add server query function to get stock information
-            service.getQ = function (s) {
+            factory.getQ = function (s) {
                 var url = "http://query.yahooapis.com/v1/public/yql",
                     symbol = s,
                     qstring = "SELECT * FROM yahoo.finance.quotes WHERE symbol in ('" + symbol + "')";
@@ -33,5 +33,5 @@ var app = angular.module('myApp', ['ngRoute', 'ngAnimate'])
                 return q;
             };
             
-            return service;
+            return factory;
         });

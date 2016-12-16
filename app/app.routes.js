@@ -1,6 +1,5 @@
 /*global app*/
 // configure routes
-// pass in $locationProvider requires .htaccess file
 app.config(function ($routeProvider) {
     "use strict";
     $routeProvider
@@ -16,6 +15,4 @@ app.config(function ($routeProvider) {
         }).when('/projects', {
             templateUrl: 'app/views/projects.html'
         }).otherwise({ redirectTo: '/' });
-    // use the HTML5 History API
-    // $locationProvider.html5Mode(true);
 });
