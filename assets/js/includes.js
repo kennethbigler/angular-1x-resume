@@ -1,7 +1,5 @@
 // a list of all the scripts I am using in my homepage
 var includes = [
-    // jQuery
-    'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js',
     // angular
     'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular.js',
     'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular-route.min.js',
@@ -11,6 +9,8 @@ var includes = [
     'app/controllers/HomeController.js',
     'app/directives/lhs.js',
     'app/directives/VisualizationDirective.js',
+    // jQuery
+    'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js',
     // Bootstrap
     'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js',
     // Google Analytics
