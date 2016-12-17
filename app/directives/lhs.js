@@ -6,10 +6,9 @@ app.directive('lhs', function () {
         restrict: 'E',
         templateUrl: 'app/directives/lhs.html',
         controller: function ($scope, quote) {
-            $scope.ntap = quote.getQ('ntap');
             $scope.tsla = quote.getQ('tsla');
             setInterval(function () {
-                $scope.$apply(function () { $scope.ntap = quote.getQ('ntap'); $scope.tsla = quote.getQ('tsla'); });
+                $scope.$apply(function () { $scope.tsla = quote.getQ('tsla'); });
             }, 60000);
         }
     };
