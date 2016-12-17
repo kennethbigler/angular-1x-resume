@@ -2,6 +2,30 @@
     <lhs />
     <div class="col-sm-9">
         <!-- Education -->
+        
+        <div class="mainContent shadow">
+            <h3 class="mainHeader">GPA: 3.7</h3>
+            <!--svg line chart-->
+            <div class="chart" style="width: {{ grades.width }}px; height: {{ grades.height }}px;">
+                <div class="y hidden-xs" style="width: {{ grades.height }}px;">{{ grades.yAxis }}</div>
+                <div class="x">{{ grades.xAxis }}</div>
+                <svg style="width: {{ grades.width }}px; height: {{ grades.height }}px;">
+                    <line ng-xa="0"
+                          ng-ya="{{ grades.avg / grades.max * grades.height }}"
+                          ng-xb="{{ grades.width }}"
+                          ng-yb="{{ grades.avg / grades.max * grades.height }}"
+                          style="stroke: #424242">
+                    </line>
+                    <line ng-repeat="line in grades.data track by $index"
+                          ng-xa="{{ $index / grades.data.length * grades.width }}"
+                          ng-ya="{{ grades.data[$index - 1].gpa / grades.max * grades.height }}"
+                          ng-xb="{{ ($index + 1) / grades.data.length * grades.width }}"
+                          ng-yb="{{ line.gpa / grades.max * grades.height }}"
+                          style="stroke: #8E001C">
+                    </line>
+                </svg>
+            </div>
+        </div>
         <div class="mainContent shadow">
             <h3 class="mainHeader">Master of Science in Computer Engineering<br />
                 Emphasis in Software Engineering</h3>
