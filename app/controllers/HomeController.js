@@ -69,5 +69,4 @@ app.controller('HomeController', ['$scope', '$location', '$log', function ($scop
     
     // set data to the view
     $scope.grades = grades;
-    $log.log("GPA: all data is \"-2\" so that the graph looks more interesting");
 }]);
