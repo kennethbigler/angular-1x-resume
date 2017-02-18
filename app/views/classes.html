@@ -23,6 +23,12 @@
                           ng-yb="{{ line.gpa / grades.max * grades.height }}"
                           style="stroke: #8E001C">
                     </line>
+                    <g id="avgSpeedLabel">
+                        <rect x="0" ng-y="{{ (grades.avg / grades.max * grades.height) + 3 }}" ng-width="{{ 0.1 * grades.width }}" height="12" fill="White"/>
+                        <text class="svgText" x="0" ng-y="{{ -(grades.avg / grades.max * grades.height) - 4 }}" transform="scale(1,-1)">
+                            {{ grades.avg + 2 | number:1 }}
+                        </text>
+                    </g>
                 </svg>
             </div>
         </div>
