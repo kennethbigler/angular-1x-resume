@@ -27,28 +27,18 @@
     <meta name="author" content="Kenneth Bigler">
     <title>Kenneth Bigler Resume Software Engineering</title>
     <!-- Bootstrap CSS 3 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"  type='text/css' />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
     <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="assets/css/mystyles.css" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/mystyles.css">
     <!-- Includes -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular-route.min.js"></script>
-    <script type="text/javascript" src="app/app.modules.js"></script>
-    <script type="text/javascript" src="app/app.routes.js"></script>
-    <script type="text/javascript" src="app/controllers/HomeController.js"></script>
-    <script type="text/javascript" src="app/directives/lhs.js"></script>
-    <script type="text/javascript" src="app/directives/VisualizationDirective.js"></script>
-    <script type="text/javascript" src="assets/js/analytics.js"></script>
-    <!--<script type="text/javascript" src="assets/js/includes.js"></script>-->
+    <script type="text/javascript" src="assets/js/includes.js"></script>
 </head>
 <!-- Body -->
 <body ng-app="myApp" ng-controller="HomeController">
     <div class="container">
-    <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container emph">
                 <a class="navbar-brand" ng-class="getClass('/')" href="#/">Kenneth Bigler</a>
@@ -68,14 +58,14 @@
                         <li ng-class="getClass('/activities')"><a href="#/activities" ng-click="closeNav()">Activities</a></li>
                         <li ng-class="getClass('/projects')"><a href="#/projects" ng-click="closeNav()">Projects</a></li>
                     </ul>
-                </div><!-- /Items -->
+                </div>
             </div>
         </nav>
         <!-- Main Content loaded via Angular -->
         <div ng-view></div>
-    </div><!-- /container -->
-    <!-- Closing -->
+    </div>
 </body>
+<!-- Display while loading content -->
 <div ng-if="false">
     <h1>Loading the application, please hold on...</h1>
 </div>
