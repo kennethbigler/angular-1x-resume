@@ -1,8 +1,8 @@
-// ---------- google font ---------- //
+// ---------- Google Font ---------- //
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 h1, h2, h3, h4, h5, h6, p, div { font-family: 'Josefin Sans', sans-serif; }
 
-// ---------- variables ---------- //
+// ---------- Variables ---------- //
 $bgDefault      : #8e001c;
 $bgHighlight    : #424242;
 $colDefault     : #ffffff;
@@ -22,7 +22,7 @@ $dropDown       : false;
     margin-left: $left;
 }
 
-// ---------- Inherited Classes ---------- //
+// ---------- Placeholders ---------- //
 %shadow {
     -webkit-box-shadow: $shadow;
     -moz-box-shadow: $shadow;
