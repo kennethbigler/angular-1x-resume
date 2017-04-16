@@ -1,8 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-h1, h2, h3, h4, h5, h6, p, div {
-  font-family: 'Josefin Sans', sans-serif; }
-
 .leftContent, .mainContent, .site {
   -webkit-box-shadow: 0.0625em 0.3125em 0.625em #888;
   -moz-box-shadow: 0.0625em 0.3125em 0.625em #888;
@@ -25,6 +22,9 @@ h1, h2, h3, h4, h5, h6, p, div {
   .leftHeader > a, .mainHeader > a {
     color: white;
     text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-family: 'Josefin Sans', sans-serif; }
 
 body {
   background-color: #fbf7e4; }
@@ -94,8 +94,8 @@ figcaption {
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   margin: auto;
-  margin-bottom: 30px;
   margin-top: 15px;
+  margin-bottom: 30px;
   position: relative; }
   .chart .y {
     position: absolute;
